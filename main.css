@@ -1,0 +1,128 @@
+a{text-decoration: none;}
+html{
+    background-image:url("portfoliobg3.png"), radial-gradient(circle at top right, #37ecba 0%, #72afd3 100%);
+//linear-gradient( 108.7deg, rgba(224,235,213,1) 8.1%, rgba(37,148,141,1) 91.2% );
+}
+body{
+    width:80%;
+    margin:auto;
+    padding:0;
+    font-family:'Ubuntu', sans-serif;
+}
+header h1{
+    margin:0 auto;
+    width:8em;
+    text-align:center;
+    padding:0.3em 0.1em 0.1em;
+    font-size:4em;
+    background-color:white;
+    border-radius:0 0 20px 20px;
+    border:3px solid black;
+    border-top: none;
+    font-family: 'Patua One', sans-serif;
+    color:black;
+}
+.links{
+    width:30em;
+    margin:0 auto;
+}
+.links a{
+    display:block;
+    background-color:white;
+    color:black;
+    width:7em;
+    border-radius:10px;
+    border:3px solid black;
+    text-align:center;
+    padding:0.5em 0;
+    font-weight:bold;
+    font-size:1.4em;
+    margin:0 auto 1em;
+    vertical-align:middle;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.56);
+}
+.links a:hover{
+    background-color: #f1f1f1;
+}
+h2{
+    margin:1em auto;
+    text-align:center;
+    font-size:2em;
+    background-color:white;
+    width:10em;
+    padding:0.5em 0;
+    clear:both;
+    border:3px solid black;
+    border-radius: 10px;
+}
+h3{
+    padding:0; margin:0;
+    width:92%;
+    color:black;
+    font-size:1.5em;
+}
+#projects{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:20px;
+    padding-bottom:1em;
+}
+#projects div{
+    background-color:white;
+    border-radius:25px;
+    border:3px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.56);
+    padding:1em;
+    min-height:12em;
+}
+#projects div:hover{
+    background-color: #f1f1f1;
+}
+.langImg{
+    height:1.5em;
+    max-height:64px;
+    min-height:12px;
+    padding:0.1em 0 0; margin:0;
+    float:right;
+}
+.smallIcon{
+    height:1.9em;
+    max-height:64px;
+    min-height:12px;
+}
+#projects p{
+    clear:both;
+    color:black;
+}
+@media only screen and (max-width:961px){
+    #projects{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:767px){
+    #projects{
+        grid-template-columns:repeat(1,1fr);
+    }
+    header h1{
+        width:90%;
+        font-size:3em;
+    }
+    .links{
+        width:100%;
+    }
+    #projects div{
+        min-height:7em;
+    }
+}
+@media only screen and (max-width:479px){
+    #projects{
+        display:block;
+    }
+    #projects div{
+        margin:1em 0;
+    }
+    header h1{
+        font-size:2em;
+        padding-top:1em;
+    }
+}
