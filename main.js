@@ -8,7 +8,7 @@ $.getJSON("https://api.github.com/users/nickstersand/repos", function(data){
             langImg = "cpp.png";
         }else if(data[i].language == "Python"){
             langImg = "python.png";
-        }else if(data[i].language == "HTML") {
+        }else if(data[i].language == "HTML" || data[i].language == "CSS") {
             langImg = "html.png";
         }else if(data[i].language == "JavaScript"){
             langImg = "javascript.png";

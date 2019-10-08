@@ -1,7 +1,6 @@
 a{text-decoration: none;}
 html{
-    background-image:url("portfoliobg3.png"), radial-gradient(circle at top right, #37ecba 0%, #72afd3 100%);
-//linear-gradient( 108.7deg, rgba(224,235,213,1) 8.1%, rgba(37,148,141,1) 91.2% );
+    background-image:url("portfoliobg3.png"), radial-gradient(circle at top right, #37ecba, #72afd3);
 }
 body{
     width:80%;
